@@ -1,38 +1,38 @@
 import HeaderContentNew from "@/components/HeaderContent/HeaderContentNew";
 import HeroPhoto, { useHeroHeight } from "@/components/HeroPhoto";
 import {
-  ChipList,
-  DetailsGrid,
-  HoroscopeChart,
-  SectionTitle,
-  SubTitle,
+    ChipList,
+    DetailsGrid,
+    HoroscopeChart,
+    SectionTitle,
+    SubTitle,
 } from "@/components/ProfileSections";
 import {
-  MY_PROFILE,
-  Profile,
-  SAMPLE_PROFILES,
+    MY_PROFILE,
+    Profile,
+    SAMPLE_PROFILES,
 } from "@/constants/SampleProfile";
 import {
-  clean,
-  dasaBalanceText,
-  details,
-  educationText,
-  imageSource,
-  profilePhotos,
+    clean,
+    dasaBalanceText,
+    details,
+    educationText,
+    imageSource,
+    profilePhotos,
 } from "@/utils/profile";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import React, { useEffect, useState } from "react";
 import {
-  Alert,
-  Image,
-  Modal,
-  Pressable,
-  ScrollView,
-  Switch,
-  Text,
-  TextInput,
-  View,
+    Alert,
+    Image,
+    Modal,
+    Pressable,
+    ScrollView,
+    Switch,
+    Text,
+    TextInput,
+    View,
 } from "react-native";
 import { COLORS, SHEET_OVERLAP, styles } from "./style";
 
@@ -368,7 +368,7 @@ export default function DownlodProfile() {
               <Text style={styles.printText}>Print</Text>
             </Pressable>
             <Pressable style={styles.downloadBtn} onPress={handleDownload}>
-              <Feather name="download" size={20} color="#009333" />
+              <Feather name="download" size={20} color="#0B9A0B" />
               <Text style={styles.downloadText}>Download</Text>
             </Pressable>
           </View>

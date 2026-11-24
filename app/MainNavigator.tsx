@@ -1,8 +1,8 @@
 import Attendance from "@/pages/attendance";
 import Cart from "@/pages/cart";
 import Chat from "@/pages/chat";
-import DownlodProfile from "@/pages/DownlodProfile";
 import Downloads from "@/pages/downloads";
+import DownlodProfile from "@/pages/DownlodProfile";
 import EnquireFormPage from "@/pages/enquireForm";
 import FilterPage from "@/pages/filter";
 import Home from "@/pages/Home";
@@ -10,7 +10,10 @@ import LikedProfiles from "@/pages/LikedProfiles";
 import LoginPage from "@/pages/login";
 import MyProfile from "@/pages/myProfile";
 import Network from "@/pages/NetworkScreen";
+import OpenLink from "@/pages/OpenLinkScreen";
+import PDF from "@/pages/PDF";
 import PermissionScreen from "@/pages/PermissionScreen";
+import Print from "@/pages/Print";
 import ProfilePage from "@/pages/profile";
 import ProfileDetails from "@/pages/ProfileDetails";
 import Renewal from "@/pages/renewal";
@@ -37,9 +40,10 @@ export default function MainNavigator() {
   return (
     <MainStack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName={
-        token === "staff" ? "Attendance" : token === "user" ? "Profile" : "Home"
-      }
+      initialRouteName="Webview"
+      // initialRouteName={
+      //   token === "staff" ? "Attendance" : token === "user" ? "Profile" : "Home"
+      // }
     >
       <MainStack.Screen
         name="VerificationScreen"
@@ -69,6 +73,9 @@ export default function MainNavigator() {
       <MainStack.Screen name="Chat" component={Chat} />
       <MainStack.Screen name="Renewal" component={Renewal} />
       <MainStack.Screen name="EnquireForm" component={EnquireFormPage} />
+      <MainStack.Screen name="Print" component={Print} />
+      <MainStack.Screen name="PDF" component={PDF} />
+      <MainStack.Screen name="OpenLink" component={OpenLink} />
     </MainStack.Navigator>
   );
 }

@@ -39,7 +39,7 @@ const VerificationScreen = ({ route }: any) => {
 
   // for bolding the particular word
   const B = (props: any) => (
-    <Text style={{ fontWeight: "bold", color: "#009333" }}>
+    <Text style={{ fontWeight: "bold", color: "#0B9A0B" }}>
       {props.children}
     </Text>
   );
@@ -77,8 +77,8 @@ const VerificationScreen = ({ route }: any) => {
           onPress={() => handleRedirection("Yes")}
           style={styles.YesBtn}
         >
-          {/* <TickIcon name="check" color={'#009333'} size={20} /> */}
-          <AntDesign name="check" size={20} color="#009333" />
+          {/* <TickIcon name="check" color={'#0B9A0B'} size={20} /> */}
+          <AntDesign name="check" size={20} color="#0B9A0B" />
           <Text style={styles.YesBtnText}>Yes, it's me</Text>
         </Pressable>
       </View>

@@ -197,14 +197,14 @@ export const styles = StyleSheet.create({
     borderRadius: scaleFont(16),
     backgroundColor: COLORS.white,
     borderWidth: 1.5,
-    borderColor: "#009333",
+    borderColor: "#0B9A0B",
     alignItems: "center",
     justifyContent: "center",
   },
   downloadText: {
     fontSize: scaleFont(16),
     fontWeight: "700",
-    color: "#009333",
+    color: "#0B9A0B",
   },
   // Contact card (name, place, phone)
   contactCard: {

@@ -15,8 +15,11 @@ import com.facebook.react.defaults.DefaultReactNativeHost
 
 import expo.modules.ApplicationLifecycleDispatcher
 import expo.modules.ReactNativeHostWrapper
-
-class MainApplication : Application(), ReactApplication {
+import cl.json.ShareApplication
+class MainApplication : Application(),ShareApplication, ReactApplication {
+  override fun getFileProviderAuthority(): String {
+    return "com.dheerankongumanamalai.app.provider"
+  }
 
   override val reactNativeHost: ReactNativeHost = ReactNativeHostWrapper(
       this,
